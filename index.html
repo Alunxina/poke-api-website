@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="scriptlist.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <img class="headerimg"
+            src="https://archives.bulbagarden.net/media/upload/thumb/4/4b/Pok%C3%A9dex_logo.png/120px-Pok%C3%A9dex_logo.png">
+        <p class="h2"> Made using Pokemon API</p>
+    </div>
+    <!-- Search bar html -->
+    <div class="searchBox">
+        <input class="searchbar" id="pokemonName" type="Pokemon name" placeholder="Pokemon name" />
+        <button id="search">Search!</button>
+
+    </div>
+
+    <!-- Pokemon container -->
+    <div class="pokemonBox"></div>
+    <!-- Clear button -->
+    <button id="clearButton" style="display: none">Clear</button>
+
+    <!-- Detailed info -->
+    <div id="content-box">
+
+        <div id="pokemon-info">
+            <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <div id="pokemon-types">
+                Grass Poison
+            </div>
+            <div id="idnum"></div>
+            <div id="name"></div>
+            <div id="height"></div>
+            <div id="weight"></div>
+            <div id="pokemon-description">
+            </div>
+
+
+        </div>
+    <!-- List of pokemon -->
+        <div id="pokemon-list">
+        </div>
+
+    </div>
+    <!-- Load more button -->
+    <button id="load-more-button">Load More Pokemon</button>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
